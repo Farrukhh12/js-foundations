@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const tasks = [
   "Wash the dishes",
   "Complete JavaScript homework",
@@ -35,3 +36,22 @@ searchInput.addEventListener("input", () => {
 
   displayTasks(filtered);
 });
+=======
+let books = [];
+
+function addBook() {
+  const input = document.getElementById("book-input").value;
+  books.push(input); // Add the book to the array
+
+  const list = document.getElementById("book-list");
+  list.innerHTML = ""; // Clear old list before rendering again
+
+  for (let i = 0; i < books.length; i++) {
+    list.innerHTML += `<li>${books[i]}</li>`; // Append each item directly
+
+  }
+
+  // ✅ Clear the input field
+  document.getElementById("book-input").value = "";
+}
+>>>>>>> b67fd5244552c694bbe13ff561a67b697ed9a469
