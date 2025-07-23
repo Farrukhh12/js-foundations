@@ -36,3 +36,6 @@ searchInput.addEventListener("input", () => {
 
   displayTasks(filtered);
 });
+
+
+// Dark mode feature coming soon
